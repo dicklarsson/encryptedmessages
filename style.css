@@ -1,0 +1,23 @@
+body{ 
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    /* background: linear-gradient(110deg, #fdcd3b 50%, #ffed4b 50%); */
+    background: linear-gradient(110deg, #ef5339 50%, black 50%); 
+
+}
+
+#app{
+
+    background: white; 
+    border-radius: 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    opacity: 0.95;
+    max-width: 600px;
+    min-width: 200px;
+
+    margin: auto;
+    margin-top: 100px;
+    
+    padding: 50px;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "encryptedmessages",
+  "version": "1.0.0",
+  "description": "Quick and dirty example, encrypt text messages between two parties on the web",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dicklarsson/encryptedmessages.git"
+  },
+  "keywords": [],
+  "author": "Dick Henrik Larsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dicklarsson/encryptedmessages/issues"
+  },
+  "homepage": "https://github.com/dicklarsson/encryptedmessages#readme",
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.6.0",
+    "parcel": "^2.4.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3"
+  }
+}
