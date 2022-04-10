@@ -1,6 +1,9 @@
 # encryptedmessages
 
-Quick and dirty example, encrypt text messages between two parties on the web
+Short example, encrypt text messages between two parties on the web using Web Crypto and React.
+The Crypto interface represents basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives.
+
+Purely educational code.
 
 # Install dependencies
 
@@ -13,6 +16,10 @@ Quick and dirty example, encrypt text messages between two parties on the web
 # Build to "production"
 
 `npm run build`
+
+# Test
+
+`npm test` open local browser at http://localhost:1234 check the code in test.tsx
 
 # Honor to Matheus C.
 
