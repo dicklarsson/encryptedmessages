@@ -4,6 +4,8 @@ Short example, encrypt text messages between two parties on the web using Web Cr
 The Crypto interface represents basic cryptography features available in the current context. It allows access to a cryptographically strong random number generator and to cryptographic primitives.
 
 Purely educational code.
+![image](https://user-images.githubusercontent.com/9694984/162617105-c7a3dfd7-0542-4934-9e46-6a43612aa1bf.png)
+
 
 # Install dependencies
 
