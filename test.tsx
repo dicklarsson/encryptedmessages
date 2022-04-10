@@ -28,7 +28,7 @@ async function test() {
   console.log("DerivedKey", derivedKey);
 
   //Note JSON cannot handle byte arrays so we store a copy of the initalizationVector
-  //as string, we need to use TextEncoder to conver it to byte array
+  //as string, we need to use TextEncoder to convert it to byte array
   const initializationVector = new TextEncoder().encode(
     encryptedMessageFromJSON.initializationVectorAsString
   );

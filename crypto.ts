@@ -1,3 +1,10 @@
+/**
+ * @author Dick Henrik Larsson <dicklarsson@gmail.com>
+ *
+ * Most of the code comes from this wonderful blog entry
+ * https://getstream.io/blog/web-crypto-api-chat/
+ * by "Matheus C"
+ */
 export const generateKeyPair = async () => {
   const keyPair = await window.crypto.subtle.generateKey(
     {
