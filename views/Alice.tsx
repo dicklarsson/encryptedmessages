@@ -30,7 +30,7 @@ export default function Alice({ addMessage }: IProps) {
             alicesKeys.privateKeyJwk
           );
           const encrypted = await Crypto.encrypt(message, derivedKey);
-
+          console.log("Alice encrypted mess", encrypted);
           addMessage(encrypted);
         }}
       >

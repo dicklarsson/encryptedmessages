@@ -58,7 +58,10 @@ export const encrypt = async (text, derivedKey) => {
 
   //TOD Math.rando is not secure enough for production
   //Works well for demo
-  const initializationVector = new TextEncoder().encode("" + Math.random());
+  const initializationVectorAsString = "" + Math.random();
+  const initializationVector = new TextEncoder().encode(
+    initializationVectorAsString
+  );
 
   const encryptedData = await window.crypto.subtle.encrypt(
     { name: "AES-GCM", iv: initializationVector },
@@ -71,10 +74,14 @@ export const encrypt = async (text, derivedKey) => {
   const string = String.fromCharCode.apply(null, uintArray);
 
   const base64Data = btoa(string);
-  return {
+
+  const obj = {
     base64Data,
     initializationVector,
+    initializationVectorAsString,
   };
+  console.log("OBJ", obj);
+  return obj;
 };
 
 export const decrypt = async (base64Text, iv, derivedKey) => {
