@@ -55,6 +55,9 @@ export const deriveKey = async (publicKeyJwk, privateKeyJwk) => {
 
 export const encrypt = async (text, derivedKey) => {
   const encodedText = new TextEncoder().encode(text);
+
+  //TOD Math.rando is not secure enough for production
+  //Works well for demo
   const initializationVector = new TextEncoder().encode("" + Math.random());
 
   const encryptedData = await window.crypto.subtle.encrypt(
@@ -66,7 +69,6 @@ export const encrypt = async (text, derivedKey) => {
   const uintArray = new Uint8Array(encryptedData);
 
   const string = String.fromCharCode.apply(null, uintArray);
-  console.log("DA STRING", string);
 
   const base64Data = btoa(string);
   return {

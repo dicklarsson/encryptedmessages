@@ -1,22 +1,33 @@
 import React from "react";
 import { Routes } from "./Routes";
-
-export function Navigator({ route, setRoute }) {
+import Badge from "@mui/material/Badge";
+import MailIcon from "@mui/icons-material/Mail";
+export function Navigator({ numberOfMessages, route, setRoute }) {
   return (
     <div>
       <a
         href="#"
-        onClick={() => setRoute(Routes.HOME)}
-        style={getStyles(route, Routes.HOME)}
+        onClick={() => setRoute(Routes.ALICE)}
+        style={getStyles(route, Routes.ALICE)}
       >
-        Home
+        Alice skriver till Bob
+      </a>{" "}
+      <a
+        href="#"
+        onClick={() => setRoute(Routes.BOB)}
+        style={getStyles(route, Routes.BOB)}
+      >
+        <Badge badgeContent={numberOfMessages} color="primary" sx={{ mr: 2 }}>
+          <MailIcon color="action" />
+        </Badge>
+        Bobs inbox
       </a>
       <a
         href="#"
         onClick={() => setRoute(Routes.WALLET)}
         style={getStyles(route, Routes.WALLET)}
       >
-        Wallet
+        Generate new crypto keys
       </a>
     </div>
   );

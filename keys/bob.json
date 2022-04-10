@@ -1,0 +1,19 @@
+{
+  "privateKeyJwk": {
+    "crv": "P-256",
+    "d": "8m2nfiFs6fPVcbraRRS_qFvWcWV92U4SFOi6ZEmw41k",
+    "ext": true,
+    "key_ops": ["deriveBits", "deriveKey"],
+    "kty": "EC",
+    "x": "AfcVMknn4Vaf5uGLKzWbSH1AyqY3TVmd9LA4CLPZkQs",
+    "y": "6e6iboQleHRwuKSl9ytGDgmJR5RDa6pE3spVK4pnwlM"
+  },
+  "publicKeyJwk": {
+    "crv": "P-256",
+    "ext": true,
+    "key_ops": [],
+    "kty": "EC",
+    "x": "AfcVMknn4Vaf5uGLKzWbSH1AyqY3TVmd9LA4CLPZkQs",
+    "y": "6e6iboQleHRwuKSl9ytGDgmJR5RDa6pE3spVK4pnwlM"
+  }
+}
