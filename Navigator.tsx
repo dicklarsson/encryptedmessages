@@ -10,7 +10,7 @@ export function Navigator({ numberOfMessages, route, setRoute }) {
         onClick={() => setRoute(Routes.ALICE)}
         style={getStyles(route, Routes.ALICE)}
       >
-        Alice skriver till Bob
+        Alice writes to Bob
       </a>{" "}
       <a
         href="#"
